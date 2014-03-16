@@ -1,135 +1,195 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Template 4</title>
-<meta name="description" content="A description of your website">
-<meta name="keywords" content="keyword1, keyword2, keyword3">
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<title>Miniport</title>
+<meta charset="utf-8">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="css/5grid/init.js?use=mobile,desktop,1000px"></script>
+<script src="js/init.js"></script>
+<noscript>
+<link rel="stylesheet" href="css/5grid/core.css">
+<link rel="stylesheet" href="css/5grid/core-desktop.css">
+<link rel="stylesheet" href="css/5grid/core-1200px.css">
+<link rel="stylesheet" href="css/5grid/core-noscript.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style-desktop.css">
+</noscript>
+<!--[if lte IE 9]>
+<link rel="stylesheet" href="css/ie9.css">
+<![endif]-->
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="css/ie8.css">
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel="stylesheet" href="css/ie7.css">
+<![endif]-->
 </head>
 <body>
-<!--start wrapper here-->
-<div id="wrapper"> 
-  <!--start header from here-->
-  <div id="header"> 
-    <!--start banner from here-->
-    <div class="top_banner">
-      <h1>Enter Site Title</h1>
-      <p>Enter Site Slogan</p>
+<nav id="nav">
+  <ul>
+    <li><a href="#top">Top</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<div class="wrapper wrapper-style1 wrapper-first">
+  <article class="5grid-layout" id="top">
+    <div class="row">
+      <div class="4u"> <span class="me image image-full"><img src="images/me.jpg" alt=""></span> </div>
+      <div class="8u">
+        <header>
+          <h1>Hi. I'm <strong>Jane Doe</strong>.</h1>
+        </header>
+        <p>And this is <strong>Miniport</strong>, a free, fully responsive HTML5 site template designed by AJ for HTML5 Up! &amp; released under the CCA license.</p>
+        <a href="#work" class="button button-big">Learn about what I do</a> </div>
     </div>
-    <!--/. end banner from here--> 
- 
-  </div>
-  <!--/. end header from here--> 
-  <!--start page content from here-->
-  <div id="page_content">
-    <!--start navigation from here-->
-    <div class="navigation">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">New Page</a></li>
-        <li><a href="#">New Page 2</a></li>
-        <li><a href="#">New Page 3</a></li>
-        <li><a href="#">New Page 4</a></li>
-        <li><a href="#">New Page 5</a></li>
-      </ul>
+  </article>
+</div>
+<div class="wrapper wrapper-style2">
+  <article id="work">
+    <header>
+      <h2>I design and build amazing things.</h2>
+      <span>Odio turpis amet sed consequat eget posuere consequat.</span> </header>
+    <div class="5grid-layout">
+      <div class="row">
+        <div class="4u">
+          <section class="box box-style1"> <span class="image image-centered"><img src="images/work01.png" alt=""></span>
+            <h3>Consequat lorem</h3>
+            <p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+          </section>
+        </div>
+        <div class="4u">
+          <section class="box box-style1"> <span class="image image-centered"><img src="images/work02.png" alt=""></span>
+            <h3>Lorem dolor tempus</h3>
+            <p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+          </section>
+        </div>
+        <div class="4u">
+          <section class="box box-style1"> <span class="image image-centered"><img src="images/work03.png" alt=""></span>
+            <h3>Feugiat posuere</h3>
+            <p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+          </section>
+        </div>
+      </div>
     </div>
-   
-    <!--/. end navigation from here--> 
-    <!--start left side bar from here-->
-    
-    <div class="left_side_bar"> 
-      <!--repeat column-->
-      <div class="col_1">
-        <h1>Main Menu</h1>
-        <div class="box">
-          <ul>
-            <li><a href="#">Menu Item 1</a></li>
-            <li><a href="#">Menu Item 2</a></li>
-            <li><a href="#">Menu Item 3</a></li>
-            <li><a href="#">Menu Item 4</a></li>
-            <li><a href="#">Menu Item 5</a></li>
-            <li><a href="#">Menu Item 6</a></li>
-            <li><a href="#">Menu Item 7</a></li>
-            <li><a href="#">Menu Item 8</a></li>
-            <li><a href="#">Menu Item 9</a></li>
-            <li><a href="#">Menu Item 10</a></li>
-            <li><a href="#">Menu Item 11</a></li>
-            <li><a href="#">Menu Item 12</a></li>
+    <footer>
+      <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+      <a href="#portfolio" class="button button-big">See some of my recent work</a> </footer>
+  </article>
+</div>
+<div class="wrapper wrapper-style3">
+  <article id="portfolio">
+    <header>
+      <h2>Awesome work makes happy clients.</h2>
+      <span>Proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore feugiat lorem ipsum dolore.</span> </header>
+    <div class="5grid-layout">
+      <div class="row">
+        <div class="12u"> </div>
+      </div>
+      <div class="row">
+        <div class="4u">
+          <article class="box box-style2"> <a href="#" class="image image-full"><img src="images/portfolio01.jpg" alt=""></a>
+            <h3><a href="#">Magna feugiat</a></h3>
+            <p>Ornare nulla proin odio consequat.</p>
+          </article>
+        </div>
+        <div class="4u">
+          <article class="box box-style2"> <a href="#" class="image image-full"><img src="images/portfolio02.jpg" alt=""></a>
+            <h3><a href="#">Veroeros primis</a></h3>
+            <p>Ornare nulla proin odio consequat.</p>
+          </article>
+        </div>
+        <div class="4u">
+          <article class="box box-style2"> <a href="#" class="image image-full"><img src="images/portfolio03.jpg" alt=""></a>
+            <h3><a href="#">Lorem ipsum</a></h3>
+            <p>Ornare nulla proin odio consequat.</p>
+          </article>
+        </div>
+      </div>
+      <div class="row">
+        <div class="4u">
+          <article class="box box-style2"> <a href="#" class="image image-full"><img src="images/portfolio04.jpg" alt=""></a>
+            <h3><a href="#">Tempus dolore</a></h3>
+            <p>Ornare nulla proin odio consequat.</p>
+          </article>
+        </div>
+        <div class="4u">
+          <article class="box box-style2"> <a href="#" class="image image-full"><img src="images/portfolio05.jpg" alt=""></a>
+            <h3><a href="#">Feugiat aliquam</a></h3>
+            <p>Ornare nulla proin odio consequat.</p>
+          </article>
+        </div>
+        <div class="4u">
+          <article class="box box-style2"> <a href="#" class="image image-full"><img src="images/portfolio06.jpg" alt=""></a>
+            <h3><a href="#">Sed amet ornare</a></h3>
+            <p>Ornare nulla proin odio consequat.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+      <a href="#contact" class="button button-big">Get in touch with me</a> </footer>
+  </article>
+</div>
+<div class="wrapper wrapper-style4">
+  <article id="contact">
+    <header>
+      <h2>Want to hire me? Get in touch!</h2>
+      <span>Ornare nulla proin odio consequat sapien vestibulum ipsum sed lorem.</span> </header>
+    <div class="5grid">
+      <div class="row">
+        <div class="12u">
+          <form method="post" action="#">
+            <div class="5grid">
+              <div class="row">
+                <div class="6u">
+                  <input type="text" name="name" id="name" placeholder="Name">
+                </div>
+                <div class="6u">
+                  <input type="text" name="email" id="email" placeholder="Email">
+                </div>
+              </div>
+              <div class="row">
+                <div class="12u">
+                  <input type="text" name="subject" id="subject" placeholder="Subject">
+                </div>
+              </div>
+              <div class="row">
+                <div class="12u">
+                  <textarea name="message" id="message" placeholder="Message"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="12u">
+                  <input type="submit" class="button" value="Send Message">
+                  <input type="reset" class="button button-alt" value="Clear Form">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row row-special">
+        <div class="12u">
+          <h3>Find me on ...</h3>
+          <ul class="social">
+            <li class="facebook"><a href="#">Facebook</a></li>
+            <li class="twitter"><a href="#">Twitter</a></li>
+            <li class="dribbble"><a href="#">Dribbble</a></li>
+            <li class="linkedin"><a href="#">LinkedIn</a></li>
+            <li class="tumblr"><a href="#">Tumblr</a></li>
+            <li class="googleplus"><a href="#">Google+</a></li>
           </ul>
         </div>
       </div>
-      <!--/. end repeat column--> 
-      
-      <!--repeat column-->
-      <div class="col_1">
-        <h1>Block</h1>
-        <div class="box">
-          <p>Enter Block content here...</p>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-Aenean commodo Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
- Aenean commodo</p>
-        </div>
-      </div>
-      <!--/. end repeat column--> 
-      
     </div>
-    <!--/. end left side bar from here--> 
-    <!--start right section from here-->
-    
-    <div class="right_section">
-      <div class="common_content">
-        <h2>Gallery</h2>
-        <p><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </strong></p>
-        <p><a href="#">Lorem ipsum dolor</a> sit amet, consectetuer 
-adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum 
-sociis natoque penatibus et magnis dis parturient montes, nascetur 
-ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
- quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
- vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, 
-imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis 
-pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
- Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, 
-consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, 
-viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
- laoreet. Quisque rutrum. Aenean imperdiet. </p>
-        </div>
-      <div class="top_content">
-        <div class="column_one">
-          <h2>Subscription</h2>
-          <p><strong>Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</strong></p>
-          <p> Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,</p>
-          <p>Sit amet adipiscing sem neque sed ipsum. Nam quam nunc, 
-blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et 
-ant</p>
-         <a href="#" class="btn">Read more</a> 
-        </div>
-        <div class="column_two border_left">
-          <h2>Other Services</h2>
-          <p>Etiam ultricies nisi vel augue. Curabitur ullamcorper 
-ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus 
-eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing 
-sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, 
-hendrerit id, lorem. Maecenas nec odio et ant</p>
-          <a href="#" class="btn">Read more</a> </div>
-      </div>
-    </div>
-    <!--/. end right section from here-->
-    
-    <div class="clear"></div>
-    
-    <!--start footer from here-->
-    <div id="footer">Copyright &copy; 2014. Design by <a href="http://www.websitetemplates.org.in" target="_blank">website templates</a><br>
-    
-    <!--DO NOT remove footer link-->
-    <!--Template designed by--><a href="http://www.websitetemplates.org.in"><img src="images/copyright.gif" class="copyright" alt="website templates"></a></div>
-	
-    <!--/. end footer from here-->
-  </div>
-  <!--/. end page content from here--> 
-  
+    <footer>
+      <p id="copyright"> &copy; 2045 Untitled | Images: <a href="http://fotogrph.com">Fotogrph</a> + <a href="http://iconify.it">Iconify.it</a> | Design: <a href="http://html5up.net/">HTML5 Up!</a> </p>
+    </footer>
+  </article>
 </div>
-<!--end wrapper here-->
-
-
-</body></html>
+</body>
+</html>
